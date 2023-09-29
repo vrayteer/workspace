@@ -207,11 +207,7 @@ const init = () => {
 
     window.addEventListener('resize', () => {
       if (vacanciesFilterBtn.classList.contains('vacancies__filter-btn_active')) {
-        closeFilter(vacanciesFilterBtn,
-          vacanciesFilter,
-          'vacancies__filter-btn_active',
-          'vacancies__filter_active',
-          );
+        vacanciesFilter.style.height = `${vacanciesFilter.scrollHeight}px`;
       }
     });
 
